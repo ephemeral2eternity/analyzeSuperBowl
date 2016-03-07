@@ -8,13 +8,10 @@ import re
 import datetime
 from matplotlib.backends.backend_pdf import PdfPages
 
-def plot_chunk_QoEs(QoEs, client, client_location, plt_styles, reg_name):
+client = "aguila1.lsi.upc.edu"
+client_location = "Universitat Politecnica de Catalunya"
 
-
-client = "75-130-96-12.static.oxfr.ma.charter.com"
-client_location = "Worcester Polytechnic Institute, Massachusetts, US"
-
-datafolder = "./data/"
+datafolder = "../superbowl_data/log/"
 
 pingSuffix = "_BBB.json"
 plt_styles = ['k-', 'b-.', 'r:', 'm--', 'y-s', 'k-h', 'g-^', 'b-o', 'r-*', 'm-d']
